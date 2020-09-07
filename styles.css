@@ -3,3 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+.nav1 {
+  background-color: #FF0500;
+}
+
+.subscribe {
+  background-color: #FFE400;
+  border-radius: 20px;
+}
