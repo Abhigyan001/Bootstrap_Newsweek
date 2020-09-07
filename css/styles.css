@@ -31,3 +31,8 @@
 .nav3 a {
   color: grey;
 }
+
+.half-size {
+  width: 25%;
+  height: 25%;
+}
