@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
-a {
+* a,
+.nav3 a:nth-child(1) {
   text-decoration: none;
   color: black;
+}
+
+.links_hover:hover {
+  text-decoration: none;
+  color: red;
 }
 
 .white {
@@ -14,10 +20,14 @@ a {
 }
 
 .nav1 {
-  background-color: #FF0500;
+  background-color: #ff0500;
 }
 
 .subscribe {
-  background-color: #FFE400;
+  background-color: #ffe400;
   border-radius: 20px;
+}
+
+.nav3 a {
+  color: grey;
 }
