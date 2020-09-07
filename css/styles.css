@@ -36,3 +36,12 @@
   width: 25%;
   height: 25%;
 }
+
+.piggy-cover {
+  background-color: #ff0500;
+  color: white;
+}
+
+.piggy-business {
+  color: #ff0500;
+}
