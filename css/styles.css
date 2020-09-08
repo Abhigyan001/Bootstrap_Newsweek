@@ -20,6 +20,11 @@ footer a {
   font-size: 15px;
 }
 
+.nav2 a {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
 .nav3 a {
   color: grey;
 }
@@ -57,9 +62,14 @@ footer a {
   height: 25%;
 }
 
-.stick {
-  position: sticky;
-  top: 0;
+.opinion img {
+  height: 50%;
+  width: auto;
+}
+
+.stick img {
+  width: 75%;
+  height: auto;
 }
 
 .piggy-cover {
@@ -69,6 +79,10 @@ footer a {
 
 .color-red {
   color: #ff0500;
+}
+
+.dems img {
+  width: 70%;
 }
 
 .grey {
@@ -84,7 +98,7 @@ footer a {
   width: 10%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 985px) {
   .stories1 {
     margin: 2% auto;
     width: 50%;
@@ -112,6 +126,15 @@ footer a {
     width: 15%;
     height: 15%;
   }
+
+  .dems img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .dems p {
+    padding-bottom: 18%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -121,6 +144,21 @@ footer a {
 
   .subs {
     width: 50%;
+  }
+  
+  .stick img {
+    width: 25%;
+    height: auto;
+  }
+
+  .full-screen img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dems img {
+    width: 15%;
   }
 
   .social-icons {
