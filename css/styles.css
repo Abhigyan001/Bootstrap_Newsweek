@@ -109,3 +109,38 @@ footer a {
     height: 15%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .book {
+    flex-direction: column;
+  }
+
+  .subs {
+    width: 50%;
+  }
+
+  .social-icons {
+    justify-content: flex-start ;
+    margin-right: 55%;
+  }
+
+  .editions {
+    border-right-color: white;
+  }
+  footer .editions a{
+    border: none;
+  }
+
+  .subscribe {
+    height: 23%;
+    margin-top: 4%;
+    width: auto;
+  }
+
+  .login {
+    margin-top: 4%;
+  }
+
+
+}
+
