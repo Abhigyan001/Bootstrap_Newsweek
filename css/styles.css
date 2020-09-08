@@ -21,6 +21,11 @@
 
 .nav1 {
   background-color: #ff0500;
+  z-index: 1000;
+}
+
+.z-ind {
+  z-index: 100;
 }
 
 .subscribe {
@@ -35,6 +40,11 @@
 .half-size {
   width: 25%;
   height: 25%;
+}
+
+.stick {
+  position: sticky;
+  top: 0;
 }
 
 .piggy-cover {
