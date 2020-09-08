@@ -45,3 +45,12 @@
 .color-red {
   color: #ff0500;
 }
+
+.grey {
+  background-color: #f4f5f6;
+}
+
+.btn-color {
+  background-color: #ff0500;
+  color: white;
+}
