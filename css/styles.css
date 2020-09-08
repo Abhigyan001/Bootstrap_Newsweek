@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 * a,
 .nav3 a:nth-child(1) {
   text-decoration: none;
@@ -63,4 +69,16 @@
 .btn-color {
   background-color: #ff0500;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .stories1 {
+    margin: 2% auto;
+    width: 50%;
+  }
+
+  .maryland img {
+    height: 50%;
+    margin: 3% 1%;
+  }
 }
