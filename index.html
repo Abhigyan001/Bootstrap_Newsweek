@@ -25,7 +25,7 @@
 
     <title>Newsweek_clone</title>
   </head>
-  <body class="mx-4">
+  <body>
     <header class="sticky-top">
       <nav
         class="nav1 d-flex flex-row justify-content-between align-items-center w-100"
@@ -64,39 +64,20 @@
         </div>
       </nav>
     </header>
-    <div
-      class="nav2 justify-content-between px-4 pt-3 pr-5 pb-1 d-none d-lg-flex"
-    >
-      <a class="border-right font-weight-bold h6 links_hover" href="#">U.S.</a>
-      <a class="border-right font-weight-bold h6 links_hover" href="#">World</a>
-      <a class="border-right px-1 font-weight-bold h6 links_hover" href="#"
-        >Business</a
-      >
-      <a class="border-right px-1 font-weight-bold h6 links_hover" href="#"
-        >Tech & Science</a
-      >
-      <a class="border-right px-1 font-weight-bold h6 links_hover" href="#"
-        >Culture</a
-      >
-      <a class="border-right px-1 font-weight-bold h6 links_hover" href="#"
-        >Newsgeek</a
-      >
-      <a class="border-right px-1 font-weight-bold h6 links_hover" href="#"
-        >Sports</a
-      >
-      <a class="border-right px-1 font-weight-bold h6 links_hover" href="#"
-        >Health</a
-      >
-      <a class="border-right px-1 font-weight-bold h6 links_hover" href="#"
-        >The Debate</a
-      >
-      <a class="border-right px-1 font-weight-bold h6 links_hover" href="#"
-        >Vantage</a
-      >
-      <a class="border-right px-1 font-weight-bold h6 links_hover" href="#"
-        >Weather</a
-      >
-      <p>Search<i class="fas fa-search pl-2"></i></p>
+    <div class="nav2 justify-content-between px-4 d-none d-lg-flex" >
+      <div class="border-right pr-4 pt-2"><a class="font-weight-bold h6 links_hover " href="#">U.S.</a></div>
+      <div class="border-right pr-4 pt-2"><a class="font-weight-bold h6 links_hover " href="#">World</a></div>
+      <div class="border-right pr-4 pt-2"><a class="font-weight-bold h6 links_hover" href="#">Business</a></div>
+      <div class="border-right pr-4 pt-2"><a class="font-weight-bold h6 links_hover" href="#">Tech & Science</a></div>
+      <div class="border-right pr-4 pt-2"><a class="font-weight-bold h6 links_hover" href="#">Culture</a></div>
+      <div class="border-right pr-4 pt-2"><a class="font-weight-bold h6 links_hover" href="#">Newsgeek</a></div>
+      <div class="border-right pr-4 pt-2"><a class="font-weight-bold h6 links_hover" href="#">Sports</a></div>
+      <div class="border-right pr-4 pt-2"><a class="font-weight-bold h6 links_hover" href="#">Health</a></div>
+      <div class="border-right pr-4 pt-2"><a class="font-weight-bold h6 links_hover" href="#">The Debate</a></div>
+      <div class="border-right pr-4 pt-2"><a class="font-weight-bold h6 links_hover" href="#">Vantage</a></div>
+      <div class="pr-4 pt-2"><a class="font-weight-bold h6 links_hover" href="#">Weather</a></div>
+      <div class="pr-4 pt-2"><p>Search<i class="fas fa-search pl-2"></i></p></div>
+      
     </div>
 
     <div
@@ -590,50 +571,54 @@
             <p class="text-secondary text-uppercase font-weight-bold mt-4">
               opinion
             </p>
-            <div class="d-flex flex-column opinion">
-              <div class="container-fluid d-flex pl-0 pr-0 pt-3 mb-3">
-                <img
-                  class="rounded-circle w-50"
+            <div class="d-flex flex-column opinion container-fluid">
+              <div class="container-fluid d-flex pl-0 pr-0 mb-2">
+                <div>
+                  <img
+                  class="rounded-circle w-100 h-auto"
                   src="images/pp1.webp"
                   alt="pic-here"
                 />
-                <div>
-                  <h6 class="font-weight-bold h6 pl-3">America's Karma</h6>
-                  <p class="text-secondary pl-3">BY MARIANNE WILLIAMSON</p>
+                </div>
+                <div class="pl-3">
+                  <h6 class="font-weight-bold h6">America's Karma</h6>
+                  <p class="text-secondary">BY MARIANNE WILLIAMSON</p>
                 </div>
               </div>
               <div
-                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 pb-3"
+                class="d-flex border-top pl-0 pr-0 pt-3 mb-2"
               >
                 <img
-                  class="rounded-circle w-75"
+                  class="rounded-circle w-25 h-75"
                   src="images/pp2.webp"
                   alt="pic-here"
                 />
-                <div>
-                  <h6 class="font-weight-bold h6 pl-3">
+                <div class="pl-3">
+                  <h6 class="font-weight-bold h6">
                     Wanted: A Coalition to Restrain Beijing
                   </h6>
-                  <p class="text-secondary pl-3">BY NOAH GARBER</p>
+                  <p class="text-secondary">BY NOAH GARBER</p>
                 </div>
               </div>
               <div
-                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 pb-3"
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-2"
               >
-                <img
-                  class="rounded-circle"
+                <div class="w-50">
+                  <img
+                  class="rounded-circle h-auto"
                   src="images/pp3.webp"
                   alt="pic-here"
                 />
-                <div>
-                  <h6 class="font-weight-bold h6 pl-3">
+                </div>
+                <div class="pl-2">
+                  <h6 class="font-weight-bold h6">
                     Is the Economy Finally Showing Real Signs of Life? Maybe.
                   </h6>
-                  <p class="text-secondary pl-3">BY HANK GILMAN</p>
+                  <p class="text-secondary">BY HANK GILMAN</p>
                 </div>
               </div>
               <div
-                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-5 pb-5"
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-2"
               >
                 <img
                   class="rounded-circle"
@@ -651,28 +636,30 @@
                 </div>
               </div>
               <div
-                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-5 pb-5"
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-2"
               >
-                <img
+                
+                  <img
                   class="rounded-circle h-50"
                   src="images/pp5.webp"
                   alt="pic-here"
                 />
-                <div>
-                  <h6 class="font-weight-bold h6 pl-3">
+                
+                <div class="pl-3">
+                  <h6 class="font-weight-bold h6 ">
                     A Warning to Our Fellow Democrats: A Campaign Focused on
                     Trump Won't Win
                   </h6>
-                  <p class="text-secondary pl-3">
+                  <p class="text-secondary">
                     BY SLY JAMES AND WINSTON FISHER
                   </p>
                 </div>
               </div>
               <div
-                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-5 pb-5"
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-2"
               >
                 <img
-                  class="rounded-circle h-75"
+                  class="rounded-circle w-25 h-75"
                   src="images/pp6.webp"
                   alt="pic-here"
                 />
@@ -684,10 +671,10 @@
                 </div>
               </div>
               <div
-                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3"
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-2"
               >
                 <img
-                  class="rounded-circle"
+                  class="rounded-circle w-25 h-75"
                   src="images/pp7.webp"
                   alt="pic-here"
                 />
@@ -857,7 +844,7 @@
         </p>
         <hr />
       </div>
-      <div class="editor-part container-fluid mb-5">
+      <div class="editor-part container-fluid mb-2">
         <div class="row">
           <div class="col-lg-3 col-md-6 mt-3">
             <img class="w-100" src="images/trump-stand.png" alt="pic here" />
@@ -959,42 +946,43 @@
         <hr />
       </div>
 
-      <div class="us-news pb-5">
-        <p class="color-red h5 font-weight-bold mb-3">U.S.</p>
+      <div class="us-news pb-2">
+        <p class="color-red h5 font-weight-bold mb-3 ml-3">U.S.</p>
         <div class="container-fluid">
           <div class="row full-screen">
             <div class="col-xs-1 col-md-4">
-              <img class="mx-auto" src="images/dems.png" alt="pic here" />
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
               <p class="font-weight-bold h4">
                 Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
                 Legal Troubles
               </p>
             </div>
             <div class="col-xs-1 col-md-4">
-              <img class="mx-auto" src="images/dems.png" alt="pic here" />
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
               <p class="font-weight-bold h4">
                 Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
                 Legal Troubles
               </p>
             </div>
             <div class="d-flex flex-column col-xs-1 col-md-4 maryland dems">
-              <div class="d-flex border-bottom">
-                <img class="pb-4" src="images/maryland.png" alt="pic here" />
+              <div class="d-flex mb-0">
+                <img class="pb-1 h-75" src="images/maryland.png" alt="pic here" />
                 <p class="ml-3 h6 font-weight-bold">
                   Maryland Allows All Businesses to Reopen Ahead of Labor Day
                   Weekend
                 </p>
               </div>
-              <div class="d-flex border-bottom">
-                <img class="pb-4" src="images/maryland.png" alt="pic here" />
+              <hr>
+              <div class="d-flex pb-1 pt-1">
+                <img class="pb-1 h-75" src="images/maryland.png" alt="pic here" />
                 <p class="ml-3 h6 font-weight-bold">
                   Maryland Allows All Businesses to Reopen Ahead of Labor Day
                   Weekend
                 </p>
               </div>
-
-              <div class="d-flex border-bottom">
-                <img class="pb-4" src="images/maryland.png" alt="pic here" />
+              <hr>
+              <div class="d-flex pt-1">
+                <img class="pb-1 h-75" src="images/maryland.png" alt="pic here" />
                 <p class="ml-3 h6 font-weight-bold">
                   Maryland Allows All Businesses to Reopen Ahead of Labor Day
                   Weekend
@@ -1006,7 +994,7 @@
         <hr />
       </div>
 
-      <div class="us-news pb-5">
+      <div class="us-news pb-2">
         <p class="color-red h5 font-weight-bold mb-3">World</p>
         <div class="container-fluid maryland">
           <div class="row full-screen">
@@ -1053,7 +1041,7 @@
         <hr />
       </div>
 
-      <div class="us-news pb-5">
+      <div class="us-news pb-2">
         <p class="color-red h5 font-weight-bold mb-3">Business</p>
         <div class="container-fluid maryland">
           <div class="row full-screen">
@@ -1100,7 +1088,7 @@
         <hr />
       </div>
 
-      <div class="us-news pb-5">
+      <div class="us-news pb-2">
         <p class="color-red h5 font-weight-bold mb-3">TECH & SCIENCE</p>
         <div class="container-fluid maryland">
           <div class="row full-screen">
@@ -1147,7 +1135,7 @@
         <hr />
       </div>
 
-      <div class="us-news pb-5">
+      <div class="us-news pb-2">
         <p class="color-red h5 font-weight-bold mb-3">Culture</p>
         <div class="container-fluid maryland">
           <div class="row full-screen">
@@ -1194,7 +1182,7 @@
         <hr />
       </div>
 
-      <div class="us-news pb-5">
+      <div class="us-news pb-2">
         <p class="color-red h5 font-weight-bold mb-3">Sports</p>
         <div class="container-fluid maryland">
           <div class="row full-screen">
@@ -1258,7 +1246,7 @@
               <p class="text-secondary text-left">
                 Choose A Membership That's Perfect for You!
               </p>
-              <button class="btn btn-color font-weight-bold subs">
+              <button class="btn btn-color font-weight-bold w-25 subs">
                 SUBSCRIBE <i class="fas fa-chevron-right"></i>
               </button>
             </div>

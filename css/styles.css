@@ -20,11 +20,6 @@ footer a {
   font-size: 15px;
 }
 
-.nav2 a {
-  padding-right: 1%;
-  padding-left: 1%;
-}
-
 .nav3 a {
   color: grey;
 }
@@ -94,9 +89,7 @@ footer a {
   color: white;
 }
 
-.subs {
-  width: 10%;
-}
+
 
 @media screen and (min-width: 768px) and (max-width: 985px) {
   .stories1 {
