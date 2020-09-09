@@ -71,7 +71,7 @@ footer a {
   height: auto;
 }
 
-.piggy-cover {
+.piggy-cover, .btn-color {
   background-color: #ff0500;
   color: white;
 }
@@ -88,13 +88,12 @@ footer a {
   background-color: #f4f5f6;
 }
 
-.btn-color {
-  background-color: #ff0500;
-  color: white;
-}
-
 .f-left {
   align-items: flex-end;
+}
+
+.mobiletext {
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) and (max-width: 985px) {
@@ -231,13 +230,13 @@ footer a {
   }
 
   .mobiletext {
-    text-align: center !important;
-    padding-right: 2% !important;
+    text-align: center;
+    padding-right: 2%;
   }
 
   .mobilepad {
-    padding-left: 2% !important;
-    margin-left: 13% !important;
+    padding-left: 2%;
+    margin-left: 13%;
   }
 }
 
