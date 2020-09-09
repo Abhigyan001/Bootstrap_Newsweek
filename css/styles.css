@@ -63,7 +63,7 @@ footer a {
 }
 
 .stick img {
-  width: 75%;
+  width: 50%;
   height: auto;
 }
 
@@ -88,8 +88,6 @@ footer a {
   background-color: #ff0500;
   color: white;
 }
-
-
 
 @media screen and (min-width: 768px) and (max-width: 985px) {
   .stories1 {
@@ -128,6 +126,11 @@ footer a {
   .dems p {
     padding-bottom: 18%;
   }
+
+  .stick img {
+    width: 75%;
+    height: 75%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -137,11 +140,6 @@ footer a {
 
   .subs {
     width: 50%;
-  }
-
-  .stick img {
-    width: 25%;
-    height: auto;
   }
 
   .full-screen img {
@@ -175,5 +173,17 @@ footer a {
 
   .login {
     margin-top: 4%;
+  }
+
+  .stick img {
+    width: 20%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .stick img {
+    width: 50%;
+    height: 50%;
   }
 }
