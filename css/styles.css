@@ -47,7 +47,6 @@ footer a {
   justify-content: space-between;
 }
 
-
 .z-ind {
   z-index: 100;
 }
@@ -66,7 +65,8 @@ footer a {
   height: 25%;
 }
 
-.stick img, .opinion img {
+.stick img,
+.opinion img {
   width: 50%;
   height: auto;
 }
@@ -246,13 +246,13 @@ footer a {
     width: 50%;
     height: 50%;
   }
-  
+
   .sub-pars {
     position: absolute;
     top: 30%;
     width: 90%;
-  } 
-  
+  }
+
   .subs {
     width: 40%;
     position: absolute;
@@ -263,5 +263,4 @@ footer a {
   .book-container {
     height: 400px;
   }
-
 }
