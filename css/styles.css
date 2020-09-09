@@ -52,6 +52,10 @@ footer a {
   border-radius: 20px;
 }
 
+.subs {
+  width: 40%;
+}
+
 .half-size {
   width: 25%;
   height: 25%;
@@ -139,7 +143,7 @@ footer a {
   }
 
   .subs {
-    width: 50%;
+    width: 55%;
   }
 
   .full-screen img {
