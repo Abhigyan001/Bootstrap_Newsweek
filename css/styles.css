@@ -43,6 +43,11 @@ footer a {
   z-index: 1000;
 }
 
+.avoid-war {
+  justify-content: space-between;
+}
+
+
 .z-ind {
   z-index: 100;
 }
@@ -61,12 +66,7 @@ footer a {
   height: 25%;
 }
 
-.opinion img {
-  height: 50%;
-  width: auto;
-}
-
-.stick img {
+.stick img, .opinion img {
   width: 50%;
   height: auto;
 }
@@ -93,6 +93,10 @@ footer a {
   color: white;
 }
 
+.f-left {
+  align-items: flex-end;
+}
+
 @media screen and (min-width: 768px) and (max-width: 985px) {
   .stories1 {
     margin: 2% auto;
@@ -102,6 +106,10 @@ footer a {
   .maryland img {
     height: 50%;
     margin: 1%;
+  }
+
+  .avoid-war {
+    justify-content: flex-start;
   }
 
   .subs {
@@ -143,7 +151,30 @@ footer a {
   }
 
   .subs {
-    width: 55%;
+    position: absolute;
+    right: 38%;
+    top: 80%;
+    width: 25%;
+  }
+
+  .avoid-war {
+    justify-content: flex-start;
+  }
+
+  .subs-1 {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2%;
+  }
+
+  .book-container {
+    height: 500px;
+  }
+
+  .sub-pars {
+    position: absolute;
+    top: 55%;
+    padding-bottom: 75%;
   }
 
   .full-screen img {
@@ -154,6 +185,12 @@ footer a {
 
   .dems img {
     width: 15%;
+  }
+
+  .f-left {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .social-icons {
@@ -209,4 +246,22 @@ footer a {
     width: 50%;
     height: 50%;
   }
+  
+  .sub-pars {
+    position: absolute;
+    top: 30%;
+    width: 90%;
+  } 
+  
+  .subs {
+    width: 40%;
+    position: absolute;
+    right: 25%;
+    top: 90%;
+  }
+
+  .book-container {
+    height: 400px;
+  }
+
 }
