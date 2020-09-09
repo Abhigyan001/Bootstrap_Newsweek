@@ -71,7 +71,8 @@ footer a {
   height: auto;
 }
 
-.piggy-cover, .btn-color {
+.piggy-cover,
+.btn-color {
   background-color: #ff0500;
   color: white;
 }
