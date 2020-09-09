@@ -183,6 +183,15 @@ footer a {
     width: 20%;
     height: 75%;
   }
+
+  .width100 {
+    width: 100%;
+  }
+
+  .opinion {
+    padding: 0;
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 450px) {
