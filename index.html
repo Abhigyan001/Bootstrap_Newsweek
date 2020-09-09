@@ -1,9 +1,1441 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap file -->
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--favicon links-->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+    <!-- fontawesome file -->
+    <script
+      src="https://kit.fontawesome.com/5b1eeceadd.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Newsweek_clone</title>
   </head>
-  <body></body>
+  <body>
+    <header class="sticky-top">
+      <nav
+        class="nav1 d-flex flex-row justify-content-between align-items-center w-100"
+      >
+        <div class="d-none d-md-none d-lg-block">
+          <div class="flex-column pl-2 pt-3">
+            <p class="white">
+              <i class="fas fa-cloud pr-2"></i>26° Guwahati, IN
+              <i class="fas fa-chevron-right"></i>
+            </p>
+            <p class="white">Mon, Sep 07, 2020</p>
+          </div>
+        </div>
+
+        <img
+          class="w-25 h-auto"
+          src="images/Newsweek_Logo.png"
+          alt="Newsweek"
+        />
+
+        <div class="d-flex pr-3 mr-4 justify-content-around">
+          <a
+            class="pr-3 font-weight-bold login white d-sm-block d-none"
+            href="#"
+            >LOGIN</a
+          >
+          <i
+            class="fa fa-user d-block d-sm-none pr-3 mt-2 white"
+            aria-hidden="true"
+          ></i>
+
+          <a class="px-3 subscribe font-weight-bold" href="#"
+            >Subscribe <i class="fas fa-chevron-right"></i>
+          </a>
+          <i class="fas fa-bars text-secondary pl-2 pt-1 h3 d-lg-none"></i>
+        </div>
+      </nav>
+    </header>
+    <div class="nav2 justify-content-between px-4 d-none d-lg-flex">
+      <div class="border-right pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">U.S.</a>
+      </div>
+      <div class="border-right pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">World</a>
+      </div>
+      <div class="border-right pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">Business</a>
+      </div>
+      <div class="border-right pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">Tech & Science</a>
+      </div>
+      <div class="border-right pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">Culture</a>
+      </div>
+      <div class="border-right pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">Newsgeek</a>
+      </div>
+      <div class="border-right pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">Sports</a>
+      </div>
+      <div class="border-right pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">Health</a>
+      </div>
+      <div class="border-right pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">The Debate</a>
+      </div>
+      <div class="border-right pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">Vantage</a>
+      </div>
+      <div class="pr-4 pt-2">
+        <a class="font-weight-bold h6 links_hover" href="#">Weather</a>
+      </div>
+      <div class="pr-4 pt-2">
+        <p>Search<i class="fas fa-search pl-2"></i></p>
+      </div>
+    </div>
+
+    <div
+      class="nav3 justify-content-start px-4 py-2 border-top border-bottom d-none d-lg-flex"
+    >
+      <a class="pr-3 font-weight-bold h6" href="#">TRENDING</a>
+      <a class="pr-3 font-weight-bold h6 links_hover" href="#">
+        DONALD TRUMP
+      </a>
+      <a class="pr-3 font-weight-bold h6 links_hover" href="#">JOE BIDEN</a>
+      <a class="pr-3 font-weight-bold h6 links_hover" href="#">CHINA</a>
+      <a class="pr-3 font-weight-bold h6 links_hover" href="#">CORONAVIRUS</a>
+      <a class="pr-3 font-weight-bold h6 links_hover" href="#">2020 ELECTION</a>
+    </div>
+
+    <main>
+      <div class="container-fluid mb-4">
+        <div class="row justify-content-around">
+          <!-- left side -->
+          <div class="left col-lg-3 col-xl-3 col-md-5 d-flex flex-column">
+            <p
+              class="text-uppercase justify-content-start font-weight-bold text-secondary mt-4"
+            >
+              featured stories
+            </p>
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+
+            <div class="stories">
+              <img class="w-100" src="images/trump-fixer.png" alt="Pic here" />
+              <h4 class="font-weight-bold">
+                Trump Fixer Michael Cohen Portrays Himself as 'Star Witness' in
+                New Memoir
+              </h4>
+              <p>
+                Trump's former lawyer says the president is "guilty of the same
+                crimes" Cohen was convicted of, citing his new book as a
+                "fundamental piece of evidence."
+              </p>
+            </div>
+          </div>
+
+          <!-- middle column -->
+          <div
+            class="middle col-lg-5 col-xl-5 col-md-6 d-flex flex-column ml-2"
+          >
+            <p class="text-secondary text-uppercase font-weight-bold mt-4">
+              Top Story
+            </p>
+            <div class="top-story">
+              <img
+                class="w-100"
+                src="images/Kamala-harris.png"
+                alt="pic here"
+              />
+              <h4 class="mt-2">
+                Kamala Harris Says Officer Who Shot Jacob Blake 'Should Be
+                Charged'
+              </h4>
+              <p>
+                The Democratic vice presidential nominee said she was "not in
+                full possession of the facts and the evidence," but said: "Based
+                on what I saw, he should be charged."
+              </p>
+            </div>
+
+            <div class="my-turn-grid container-fluid px-0">
+              <p class="text-secondary text-uppercase font-weight-bold">
+                MY TURN
+              </p>
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    class="w-100 h-80"
+                    src="images/ring.png"
+                    alt="pic here"
+                  />
+                  <p class="text-secondary">
+                    'I'm a Secret Engagement Ring Buyer for Clueless Guys'
+                  </p>
+                </div>
+                <div class="col-4">
+                  <img class="w-100 h-80" src="images/mt1.PNG" alt="pic here" />
+                  <p class="text-secondary">
+                    'I Am a Scientist Working With Severe Cases of COVID-19'
+                  </p>
+                </div>
+                <div class="col-4">
+                  <img class="w-100 h-80" src="images/mt2.PNG" alt="pic here" />
+                  <p class="text-secondary">
+                    'I'm a Secret Engagement Ring Buyer for Clueless Guys'
+                  </p>
+                </div>
+              </div>
+
+              <p class="text-secondary text-uppercase font-weight-bold">
+                Culture & Travel
+              </p>
+              <div class="row">
+                <div class="col-4">
+                  <img class="w-100 h-80" src="images/mt3.PNG" alt="pic here" />
+                  <p class="text-secondary">
+                    'I'm a Secret Engagement Ring Buyer for Clueless Guys'
+                  </p>
+                </div>
+                <div class="col-4">
+                  <img class="w-100 h-80" src="images/mt4.PNG" alt="pic here" />
+                  <p class="text-secondary">
+                    'I'm a Secret Engagement Ring Buyer for Clueless Guys'
+                  </p>
+                </div>
+                <div class="col-4">
+                  <img class="w-100 h-80" src="images/mt5.PNG" alt="pic here" />
+                  <p class="text-secondary">
+                    'I'm a Secret Engagement Ring Buyer for Clueless Guys'
+                  </p>
+                </div>
+              </div>
+
+              <p class="text-secondary text-uppercase font-weight-bold mt-4">
+                more stories
+              </p>
+              <div class="d-flex flex-column stick">
+                <div
+                  class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+                >
+                  <img src="images/trumpic.PNG" alt="pic-here" />
+                  <div>
+                    <h6 class="font-weight-bold h6 pl-3">
+                      Hagel and DeWine Say Anonymous Sources Should Come Forward
+                      Publicly
+                    </h6>
+
+                    <p class="text-secondary pl-3">
+                      "They should show some courage and step forward as well,"
+                      Obama-era Defense Secretary Chuck Hagel said.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+                >
+                  <img src="images/ms1.PNG" alt="pic-here" />
+                  <div>
+                    <h6 class="font-weight-bold h6 pl-3">
+                      Hagel and DeWine Say Anonymous Sources Should Come Forward
+                      Publicly
+                    </h6>
+
+                    <p class="text-secondary pl-3">
+                      "They should show some courage and step forward as well,"
+                      Obama-era Defense Secretary Chuck Hagel said.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+                >
+                  <img src="images/ms2.PNG" alt="pic-here" />
+                  <div>
+                    <h6 class="font-weight-bold h6 pl-3">
+                      Hagel and DeWine Say Anonymous Sources Should Come Forward
+                      Publicly
+                    </h6>
+
+                    <p class="text-secondary pl-3">
+                      "They should show some courage and step forward as well,"
+                      Obama-era Defense Secretary Chuck Hagel said.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+                >
+                  <img src="images/ms3.PNG" alt="pic-here" />
+                  <div>
+                    <h6 class="font-weight-bold h6 pl-3">
+                      Hagel and DeWine Say Anonymous Sources Should Come Forward
+                      Publicly
+                    </h6>
+
+                    <p class="text-secondary pl-3">
+                      "They should show some courage and step forward as well,"
+                      Obama-era Defense Secretary Chuck Hagel said.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+                >
+                  <img src="images/ms4.PNG" alt="pic-here" />
+                  <div>
+                    <h6 class="font-weight-bold h6 pl-3">
+                      Hagel and DeWine Say Anonymous Sources Should Come Forward
+                      Publicly
+                    </h6>
+
+                    <p class="text-secondary pl-3">
+                      "They should show some courage and step forward as well,"
+                      Obama-era Defense Secretary Chuck Hagel said.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sticky-top z-ind stick my-turn-grid container-fluid px-0"
+            >
+              <div
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+              >
+                <img src="images/ms5.PNG" alt="pic-here" />
+                <div>
+                  <h6 class="font-weight-bold h6 pl-3">
+                    Hagel and DeWine Say Anonymous Sources Should Come Forward
+                    Publicly
+                  </h6>
+
+                  <p class="text-secondary pl-3">
+                    "They should show some courage and step forward as well,"
+                    Obama-era Defense Secretary Chuck Hagel said.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+              >
+                <img src="images/ms6.PNG" alt="pic-here" />
+                <div>
+                  <h6 class="font-weight-bold h6 pl-3">
+                    Hagel and DeWine Say Anonymous Sources Should Come Forward
+                    Publicly
+                  </h6>
+
+                  <p class="text-secondary pl-3">
+                    "They should show some courage and step forward as well,"
+                    Obama-era Defense Secretary Chuck Hagel said.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+              >
+                <img src="images/ms1.PNG" alt="pic-here" />
+                <div>
+                  <h6 class="font-weight-bold h6 pl-3">
+                    Hagel and DeWine Say Anonymous Sources Should Come Forward
+                    Publicly
+                  </h6>
+
+                  <p class="text-secondary pl-3">
+                    "They should show some courage and step forward as well,"
+                    Obama-era Defense Secretary Chuck Hagel said.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+              >
+                <img src="images/ms2.PNG" alt="pic-here" />
+                <div>
+                  <h6 class="font-weight-bold h6 pl-3">
+                    Hagel and DeWine Say Anonymous Sources Should Come Forward
+                    Publicly
+                  </h6>
+
+                  <p class="text-secondary pl-3">
+                    "They should show some courage and step forward as well,"
+                    Obama-era Defense Secretary Chuck Hagel said.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+              >
+                <img src="images/ms3.PNG" alt="pic-here" />
+                <div>
+                  <h6 class="font-weight-bold h6 pl-3">
+                    Hagel and DeWine Say Anonymous Sources Should Come Forward
+                    Publicly
+                  </h6>
+
+                  <p class="text-secondary pl-3">
+                    "They should show some courage and step forward as well,"
+                    Obama-era Defense Secretary Chuck Hagel said.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="container-fluid d-flex border-top pl-0 pr-0 pt-3 mb-3 maryland"
+              >
+                <img src="images/ms4.PNG" alt="pic-here" />
+                <div>
+                  <h6 class="font-weight-bold h6 pl-3">
+                    Hagel and DeWine Say Anonymous Sources Should Come Forward
+                    Publicly
+                  </h6>
+
+                  <p class="text-secondary pl-3">
+                    "They should show some courage and step forward as well,"
+                    Obama-era Defense Secretary Chuck Hagel said.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- right column -->
+          <div class="left col-lg-3 col-md-12 d-flex flex-column mr-2">
+            <p
+              class="text-uppercase justify-content-start font-weight-bold text-secondary mt-4 mb-1"
+            >
+              the debate
+            </p>
+
+            <div class="container-fluid pl-0">
+              <hr class="text-secondary mt-1 mb-0 pl-0" />
+              <hr class="text-secondary mt-1" />
+              <div class="container-fluid d-flex pl-0 pr-0 mb-3 avoid-war">
+                <img
+                  class="rounded-circle half-size"
+                  src="images/pp9.webp"
+                  alt="pic-here"
+                />
+
+                <div>
+                  <h6 class="font-weight-bold h6 pl-3">
+                    Avoid War, Defend America, Recognize Taiwan
+                  </h6>
+
+                  <p class="pl-3 font-weight-bold">
+                    <span class="text-secondary font-weight-bold">BY</span>
+                    GORDON G. CHANG
+                  </p>
+                </div>
+              </div>
+              <hr class="text-secondary mt-1 mb-0 pl-0" />
+              <hr class="text-secondary mt-1" />
+              <div
+                class="container-fluid d-flex pl-0 pr-0 mb-3 justify-content-between"
+              >
+                <div>
+                  <h6 class="font-weight-bold h6">
+                    Don't Rush to Fully Normalize Relations With Taiwan
+                  </h6>
+
+                  <p class="font-weight-bold">
+                    <span class="text-secondary font-weight-bold">BY</span>
+                    JEROME A. COHEN
+                  </p>
+                </div>
+                <img
+                  class="rounded-circle half-size"
+                  src="images/pp8.webp"
+                  alt="pic-here"
+                />
+              </div>
+              <hr class="text-secondary mt-1 mb-0 pl-0" />
+              <hr class="text-secondary mt-1" />
+            </div>
+
+            <!-- Opinion Section -->
+
+            <p class="text-secondary text-uppercase font-weight-bold mt-4">
+              opinion
+            </p>
+            <div class="d-flex flex-column opinion container-fluid">
+              <div class="media">
+                <img
+                  class="mr-3 w-auto h-75"
+                  src="images/pp1.webp"
+                  alt="Generic placeholder image"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Until Power Shifts to Workers</h5>
+                  <p class="text-secondary">BY MARIANNE WILLIAMSON</p>
+                </div>
+              </div>
+              <div class="media">
+                <img
+                  class="mr-3 w-auto h-75"
+                  src="images/pp2.webp"
+                  alt="Generic placeholder image"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Until Power Shifts to Workers</h5>
+                  <p class="text-secondary">BY MARIANNE WILLIAMSON</p>
+                </div>
+              </div>
+              <div class="media">
+                <img
+                  class="mr-3 w-auto h-75"
+                  src="images/pp3.webp"
+                  alt="Generic placeholder image"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Until Power Shifts to Workers</h5>
+                  <p class="text-secondary">BY MARIANNE WILLIAMSON</p>
+                </div>
+              </div>
+              <div class="media">
+                <img
+                  class="mr-3 w-auto h-75"
+                  src="images/pp4.webp"
+                  alt="Generic placeholder image"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Until Power Shifts to Workers</h5>
+                  <p class="text-secondary">BY MARIANNE WILLIAMSON</p>
+                </div>
+              </div>
+              <div class="media">
+                <img
+                  class="mr-3 w-auto h-75"
+                  src="images/pp5.webp"
+                  alt="Generic placeholder image"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Until Power Shifts to Workers</h5>
+                  <p class="text-secondary">BY MARIANNE WILLIAMSON</p>
+                </div>
+              </div>
+              <div class="media">
+                <img
+                  class="mr-3 w-auto h-75"
+                  src="images/pp6.webp"
+                  alt="Generic placeholder image"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Until Power Shifts to Workers</h5>
+                  <p class="text-secondary">BY MARIANNE WILLIAMSON</p>
+                </div>
+              </div>
+              <div class="media">
+                <img
+                  class="mr-3 w-auto h-75"
+                  src="images/pp7.webp"
+                  alt="Generic placeholder image"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Until Power Shifts to Workers</h5>
+                  <p class="text-secondary">BY MARIANNE WILLIAMSON</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- right side after opinion section -->
+
+            <div class="d-flex flex-column">
+              <div class="stories1">
+                <img class="w-100" src="images/sp1.PNG" alt="Pic here" />
+                <h4 class="font-weight-bold">
+                  What Could a Career in Engineering or Computer Science Do For
+                  You?
+                </h4>
+                <p>
+                  Could this be the perfect time for you to pursue a career in
+                  engineering or computer science? Find out how to get started.
+                </p>
+              </div>
+              <div class="stories1">
+                <img class="w-100" src="images/sp2.PNG" alt="Pic here" />
+                <h4 class="font-weight-bold">
+                  What Makes the Best Lawyers Stand Out?
+                </h4>
+                <p>
+                  The unthinkable has happened and you need a good lawyer to
+                  turn to, how do you chose?
+                </p>
+              </div>
+              <div class="stories1">
+                <img class="w-100" src="images/sp3.PNG" alt="Pic here" />
+                <h4 class="font-weight-bold">
+                  America's Best Addiction Treatment Centers 2020
+                </h4>
+                <p>
+                  Newsweek partnered with global market research firm Statista
+                  Inc. to rank the best U.S. treatment facilities that focus on
+                  addiction.
+                </p>
+              </div>
+            </div>
+            <div class="sticky-top d-flex flex-column z-ind stick">
+              <div class="stories1">
+                <img class="w-100" src="images/sp4.PNG" alt="Pic here" />
+                <h4 class="font-weight-bold">
+                  Best Infection Prevention Products
+                </h4>
+                <p>
+                  During the coronavirus outbreak, health care is more important
+                  than ever. In Newsweek's first Best Health Care series, we
+                  highlight the best infection prevention products.
+                </p>
+              </div>
+              <div class="stories1">
+                <img class="w-100" src="images/sp5.PNG" alt="Pic here" />
+                <h4 class="font-weight-bold">Best Nursing Homes 2021</h4>
+                <p>
+                  Newsweek is partnering with the respected global data research
+                  firm Statista Inc. to establish a ranking of Best Nursing
+                  Homes 2021. If you work in this field, please participate in
+                  our survey.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="magazine mt-5">
+        <p class="text-center font-weight-bold h5">IN THE MAGAZINE</p>
+        <hr />
+      </div>
+
+      <div class="in-magazine container-fluid mb-5">
+        <div class="row">
+          <div class="col-xs-1 col-md-3">
+            <img class="w-100" src="images/piggy.png" alt="pic here" />
+            <p class="text-center h5 pt-1 font-weight-bold">
+              SEE ALL FEATURES <i class="fas fa-chevron-right"></i>
+            </p>
+          </div>
+          <div class="col-xs-1 col-md-3">
+            <img class="pt-5 w-100" src="images/piggy-2.PNG" alt="pic here" />
+            <div class="d-flex justify-content-start pt-2 font-weight-bold">
+              <p class="piggy-cover p-1">COVER</p>
+              <p class="p-1 ml-2 color-red font-weight-bold">BUSINESS</p>
+            </div>
+            <p class="h6 font-weight-bold w-100">
+              How the Pandemic Will Change the Way We Manage Money Forever
+            </p>
+          </div>
+          <div class="col-xs-1 col-md-3">
+            <img class="pt-5 w-100" src="images/piggy-2.PNG" alt="pic here" />
+            <div class="d-flex justify-content-start pt-2 font-weight-bold">
+              <p class="piggy-cover p-1">COVER</p>
+              <p class="p-1 ml-2 color-red font-weight-bold">BUSINESS</p>
+            </div>
+            <p class="h6 font-weight-bold w-100">
+              How the Pandemic Will Change the Way We Manage Money Forever
+            </p>
+          </div>
+          <div class="col-xs-1 col-md-3">
+            <img class="pt-5 w-100" src="images/piggy-2.PNG" alt="pic here" />
+            <div class="d-flex justify-content-start pt-2 font-weight-bold">
+              <p class="piggy-cover p-1">COVER</p>
+              <p class="p-1 ml-2 color-red font-weight-bold">BUSINESS</p>
+            </div>
+            <p class="h6 font-weight-bold w-100">
+              How the Pandemic Will Change the Way We Manage Money Forever
+            </p>
+          </div>
+          <div class="col-xs-1 col-md-3">
+            <img class="pt-5 w-100" src="images/piggy-2.PNG" alt="pic here" />
+            <div class="d-flex justify-content-start pt-2 font-weight-bold">
+              <p class="piggy-cover p-1">COVER</p>
+              <p class="p-1 ml-2 color-red font-weight-bold">BUSINESS</p>
+            </div>
+            <p class="h6 font-weight-bold w-100">
+              How the Pandemic Will Change the Way We Manage Money Forever
+            </p>
+          </div>
+          <div class="col-xs-1 col-md-3">
+            <img class="pt-5 w-100" src="images/piggy-2.PNG" alt="pic here" />
+            <div class="d-flex justify-content-start pt-2 font-weight-bold">
+              <p class="piggy-cover p-1">COVER</p>
+              <p class="p-1 ml-2 color-red font-weight-bold">BUSINESS</p>
+            </div>
+            <p class="h6 font-weight-bold w-100">
+              How the Pandemic Will Change the Way We Manage Money Forever
+            </p>
+          </div>
+          <div class="col-xs-1 col-md-3">
+            <img class="pt-5 w-100" src="images/piggy-2.PNG" alt="pic here" />
+            <div class="d-flex justify-content-start pt-2 font-weight-bold">
+              <p class="piggy-cover p-1">COVER</p>
+              <p class="p-1 ml-2 color-red font-weight-bold">BUSINESS</p>
+            </div>
+            <p class="h6 font-weight-bold w-100">
+              How the Pandemic Will Change the Way We Manage Money Forever
+            </p>
+          </div>
+          <div class="col-xs-1 col-md-3">
+            <img class="pt-5 w-100" src="images/piggy-2.PNG" alt="pic here" />
+            <div class="d-flex justify-content-start pt-2 font-weight-bold">
+              <p class="piggy-cover p-1">COVER</p>
+              <p class="p-1 ml-2 color-red font-weight-bold">BUSINESS</p>
+            </div>
+            <p class="h6 font-weight-bold w-100">
+              How the Pandemic Will Change the Way We Manage Money Forever
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="editor-pick">
+        <p class="text-center font-weight-bold h5">EDITOR'S PICK</p>
+        <hr />
+      </div>
+      <div class="editor-part container-fluid mb-2">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mt-3">
+            <img class="w-100" src="images/trump-stand.png" alt="pic here" />
+            <p class="h4 font-weight-bold w-100">
+              Trump and Biden Nearly Tied for Presidency in New Emerson Poll
+            </p>
+            <p>
+              Voters who responded to the poll gave Biden 49 percent of their
+              support, with President Trump two percentage points behind with 47
+              percent of voter support.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-3">
+            <img class="w-100" src="images/trump-stand.png" alt="pic here" />
+            <p class="h4 font-weight-bold w-100">
+              Fast-tracking COVID-19 Vaccine Should Not Be Done 'Lightly,' WHO
+              Says
+            </p>
+            <p>
+              The World Health Organization advised caution in fast-tracking a
+              vaccine candidate but said that each country has the "sovereign
+              right" to do so.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-3">
+            <img class="w-100" src="images/trump-stand.png" alt="pic here" />
+            <p class="h4 font-weight-bold w-100">
+              Fast-tracking COVID-19 Vaccine Should Not Be Done 'Lightly,' WHO
+              Says
+            </p>
+            <p>
+              The documents show that while Trump and Pence publicly tried to
+              quell fears by saying the resurgence of the virus was "overblown"
+              and that it is "going to disappear.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-3">
+            <img class="w-100" src="images/trump-stand.png" alt="pic here" />
+            <p class="h4 font-weight-bold w-100">
+              Fast-tracking COVID-19 Vaccine Should Not Be Done 'Lightly,' WHO
+              Says
+            </p>
+            <p>
+              The World Health Organization advised caution in fast-tracking a
+              vaccine candidate but said that each country has the "sovereign
+              right" to do so.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-3">
+            <img class="w-100" src="images/trump-stand.png" alt="pic here" />
+            <p class="h4 font-weight-bold w-100">
+              Fast-tracking COVID-19 Vaccine Should Not Be Done 'Lightly,' WHO
+              Says
+            </p>
+            <p>
+              The World Health Organization advised caution in fast-tracking a
+              vaccine candidate but said that each country has the "sovereign
+              right" to do so.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-3">
+            <img class="w-100" src="images/trump-stand.png" alt="pic here" />
+            <p class="h4 font-weight-bold w-100">
+              Fast-tracking COVID-19 Vaccine Should Not Be Done 'Lightly,' WHO
+              Says
+            </p>
+            <p>
+              The World Health Organization advised caution in fast-tracking a
+              vaccine candidate but said that each country has the "sovereign
+              right" to do so.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <img class="w-100" src="images/trump-stand.png" alt="pic here" />
+            <p class="h4 font-weight-bold w-100">
+              Fast-tracking COVID-19 Vaccine Should Not Be Done 'Lightly,' WHO
+              Says
+            </p>
+            <p>
+              The World Health Organization advised caution in fast-tracking a
+              vaccine candidate but said that each country has the "sovereign
+              right" to do so.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-3">
+            <img class="w-100" src="images/trump-stand.png" alt="pic here" />
+            <p class="h4 font-weight-bold w-100">
+              Fast-tracking COVID-19 Vaccine Should Not Be Done 'Lightly,' WHO
+              Says
+            </p>
+            <p>
+              The World Health Organization advised caution in fast-tracking a
+              vaccine candidate but said that each country has the "sovereign
+              right" to do so.
+            </p>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <section class="us-news pb-2">
+        <p class="color-red h5 font-weight-bold mb-3 ml-3">U.S.</p>
+        <div class="container-fluid">
+          <div class="row full-screen">
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="d-flex flex-column col-xs-1 col-md-4 maryland dems">
+              <div class="d-flex mb-0">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pb-1 pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section class="us-news pb-2">
+        <p class="color-red h5 font-weight-bold mb-3 ml-3">World</p>
+        <div class="container-fluid">
+          <div class="row full-screen">
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="d-flex flex-column col-xs-1 col-md-4 maryland dems">
+              <div class="d-flex mb-0">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pb-1 pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section class="us-news pb-2">
+        <p class="color-red h5 font-weight-bold mb-3 ml-3">Business</p>
+        <div class="container-fluid">
+          <div class="row full-screen">
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="d-flex flex-column col-xs-1 col-md-4 maryland dems">
+              <div class="d-flex mb-0">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pb-1 pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section class="us-news pb-2">
+        <p class="color-red h5 font-weight-bold mb-3 ml-3">Tech & Science</p>
+        <div class="container-fluid">
+          <div class="row full-screen">
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="d-flex flex-column col-xs-1 col-md-4 maryland dems">
+              <div class="d-flex mb-0">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pb-1 pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section class="us-news pb-2">
+        <p class="color-red h5 font-weight-bold mb-3 ml-3">Culture</p>
+        <div class="container-fluid">
+          <div class="row full-screen">
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="d-flex flex-column col-xs-1 col-md-4 maryland dems">
+              <div class="d-flex mb-0">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pb-1 pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section class="us-news pb-2">
+        <p class="color-red h5 font-weight-bold mb-3 ml-3">Sports</p>
+        <div class="container-fluid">
+          <div class="row full-screen">
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="col-xs-1 col-md-4">
+              <img class="mx-auto w-100" src="images/dems.png" alt="pic here" />
+              <p class="font-weight-bold h4">
+                Dems Ask IRS to Investigate Tax-Exempt Status for NRA After
+                Legal Troubles
+              </p>
+            </div>
+            <div class="d-flex flex-column col-xs-1 col-md-4 maryland dems">
+              <div class="d-flex mb-0">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pb-1 pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+              <hr />
+              <div class="d-flex pt-1">
+                <img
+                  class="pb-1 h-75"
+                  src="images/maryland.png"
+                  alt="pic here"
+                />
+                <p class="ml-3 h6 font-weight-bold">
+                  Maryland Allows All Businesses to Reopen Ahead of Labor Day
+                  Weekend
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section class="row container-fluid p-0 m-0">
+        <div class="col-lg-8 col-md-12 col-sm-12">
+          <p class="color-red h5 font-weight-bold mb-3">SUBSCRIBE</p>
+          <div class="grey d-flex book book-container">
+            <img
+              class="pt-5 pl-3 pb-2 subs-1"
+              src="images/subs1.PNG"
+              alt="pic here"
+            />
+
+            <div class="d-flex flex-column pl-3 pb-4 sub-pars">
+              <h4 class="text-dark h4 font-weight-bold mobiletext">
+                In-depth Stories You Don't See Elsewhere About Topics You Want
+                to Read!
+              </h4>
+              <p class="text-secondary mt-3 mb-0 mobiletext">
+                All Access + Weekly Delivery.
+              </p>
+              <p class="text-secondary mobiletext">
+                Choose A Membership That's Perfect for You!
+              </p>
+              <button class="btn btn-color font-weight-bold subs mobilepad">
+                SUBSCRIBE <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 newsletter container-fluid">
+          <p class="color-red h5 font-weight-bold mb-3">NEWSLETTER</p>
+          <div class="grey d-flex border book">
+            <img
+              class="d-none d-md-block"
+              src="images/subs2.PNG"
+              alt="pic here"
+            />
+
+            <div class="d-flex flex-column pl-3 pt-3 w-100">
+              <h4
+                class="text-dark h4 text-left fpnt-weight-bold width100 mobiletext"
+              >
+                The Starting 5
+              </h4>
+              <p class="text-secondary text-left mt-3 pr-5 width100 mobiletext">
+                See why nearly a quarter of a million subscribers begin their
+                day with the Starting 5.
+              </p>
+              <input
+                type="email"
+                class="border p-1 w-75 mb-2 mr-2 text-secondary width100 mobilepad"
+                value="Email address"
+              />
+              <button
+                class="btn btn-color font-weight-bold w-75 mb-3 width100 mobilepad"
+              >
+                FREE SIGN UP <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+    <!-- Footer -->
+    <footer class="mx-2">
+      <div class="d-flex justify-content-between book">
+        <div class="f-left d-flex social-icons book">
+          <img src="images/nw-ft.PNG" alt="pic here" />
+
+          <p class="text-secondary mb-0 pl-3">
+            <i class="far fa-copyright"></i>2020 NEWSWEEK
+          </p>
+        </div>
+        <div class="social text-secondary h3">
+          <i class="fab fa-facebook-square pr-2"></i>
+          <i class="fab fa-twitter-square pr-2"></i>
+          <i class="fab fa-instagram-square pr-2"></i>
+          <i class="fab fa-tumblr pr-2"></i>
+          <i class="fab fa-linkedin-in pr-2"></i>
+        </div>
+      </div>
+      <hr />
+
+      <div class="d-flex mb-2 flex-wrap editions">
+        <a class="font-weight-bold text-secondary h5 mr-4" href="#"
+          >Editions:
+        </a>
+        <a class="border-right text-secondary pr-2 editions" href="#"
+          >U.S. Edition</a
+        >
+        <a class="border-right text-secondary px-4" href="#">日本</a>
+        <a class="border-right text-secondary px-4" href="#">Pakistan</a>
+        <a class="border-right text-secondary px-4" href="#">Polska</a>
+        <a class="px-4 text-secondary" href="#">România</a>
+      </div>
+      <div class="d-flex mb-2 flex-wrap">
+        <a class="pr-2 pl-2 text-secondary border-right" href="#">About Us</a>
+        <a class="pr-2 pl-2 text-secondary border-right" href="#"
+          >Corrections</a
+        >
+        <a class="pr-2 pl-2 text-secondary border-right" href="#">
+          Contact Us</a
+        >
+        <a class="pr-2 pl-2 text-secondary border-right" href="#"
+          >Editorial Guidelines</a
+        >
+        <a class="pr-2 pl-2 text-secondary border-right" href="#">Advertise</a>
+        <a class="pr-2 pl-2 text-secondary border-right" href="#">Copyright</a>
+        <a class="pr-2 pl-2 text-secondary border-right" href="#"
+          >Terms & Conditions</a
+        >
+        <a class="pr-2 pl-2 text-secondary border-right" href="#"
+          >Privacy Policy</a
+        >
+        <a class="pr-2 pl-2 text-secondary border-right" href="#"
+          >Cookie Policy</a
+        >
+        <a class="pr-2 pl-2 text-secondary border-right" href="#"
+          >Terms of Sale</a
+        >
+
+        <a class="pr-2 pl-2 text-secondary border-right border-xs-0" href="#"
+          >Archive</a
+        >
+        <a class="pr-2 pl-2 text-secondary border-right" href="#"
+          >Announcements</a
+        >
+        <a class="pr-2 pl-2 text-secondary" href="#"> Consent preferences</a>
+      </div>
+    </footer>
+  </body>
 </html>

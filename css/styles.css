@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav3 a {
+  color: grey;
+}
+
+.nav3 a:nth-child(1) {
+  text-decoration: none;
+  color: black;
+}
+
+.links_hover:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.white {
+  color: white;
+}
+
+.nav1 {
+  background-color: #ff0500;
+  z-index: 1000;
+}
+
+.avoid-war {
+  justify-content: space-between;
+}
+
+.z-ind {
+  z-index: 100;
+}
+
+.subscribe {
+  background-color: #ffe400;
+  border-radius: 20px;
+}
+
+.subs {
+  width: 40%;
+}
+
+.half-size {
+  width: 25%;
+  height: 25%;
+}
+
+.stick img,
+.opinion img {
+  width: 50%;
+  height: auto;
+}
+
+.piggy-cover,
+.btn-color {
+  background-color: #ff0500;
+  color: white;
+}
+
+.color-red {
+  color: #ff0500;
+}
+
+.dems img {
+  width: 70%;
+}
+
+.grey {
+  background-color: #f4f5f6;
+}
+
+.f-left {
+  align-items: flex-end;
+}
+
+.mobiletext {
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) and (max-width: 985px) {
+  .stories1 {
+    margin: 2% auto;
+    width: 50%;
+  }
+
+  .maryland img {
+    height: 50%;
+    margin: 1%;
+  }
+
+  .avoid-war {
+    justify-content: flex-start;
+  }
+
+  .subs {
+    width: 35%;
+  }
+
+  .subscribe {
+    height: 30px;
+    margin-top: 2%;
+  }
+
+  .login {
+    margin-top: 4%;
+  }
+
+  .half-size {
+    width: 15%;
+    height: 15%;
+  }
+
+  .dems img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .dems p {
+    padding-bottom: 18%;
+  }
+
+  .stick img {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .book {
+    flex-direction: column;
+  }
+
+  .subs {
+    position: absolute;
+    right: 38%;
+    top: 80%;
+    width: 25%;
+  }
+
+  .avoid-war {
+    justify-content: flex-start;
+  }
+
+  .subs-1 {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2%;
+  }
+
+  .book-container {
+    height: 500px;
+  }
+
+  .sub-pars {
+    position: absolute;
+    top: 55%;
+    padding-bottom: 75%;
+  }
+
+  .full-screen img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dems img {
+    width: 15%;
+  }
+
+  .f-left {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    margin-right: 55%;
+  }
+
+  .editions {
+    border-right-color: white;
+  }
+
+  footer .editions a {
+    border: none;
+  }
+
+  .subscribe {
+    height: 23%;
+    margin-top: 4%;
+    width: auto;
+  }
+
+  .login {
+    margin-top: 4%;
+  }
+
+  .stick img {
+    width: 20%;
+    height: 75%;
+  }
+
+  .width100 {
+    width: 100%;
+  }
+
+  .opinion {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .mobiletext {
+    text-align: center;
+    padding-right: 2%;
+  }
+
+  .mobilepad {
+    padding-left: 2%;
+    margin-left: 13%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .stick img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .sub-pars {
+    position: absolute;
+    top: 30%;
+    width: 90%;
+  }
+
+  .subs {
+    width: 40%;
+    position: absolute;
+    right: 25%;
+    top: 90%;
+  }
+
+  .book-container {
+    height: 400px;
+  }
+}
